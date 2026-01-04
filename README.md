@@ -10,24 +10,11 @@ This project applies Principal Component Analysis (PCA) to reduce 15 predictor v
 - **Dimensionality Reduction**: 15 variables → 5 components (67% reduction)
 - **Comparison**: Full linear model (15 variables) achieved R² = 0.80
 
-## Methodology
-1. Standardized 15 predictor variables
-2. Applied PCA using R's `prcomp()` function
-3. Selected first 5 principal components
-4. Built linear regression model on PC scores
-5. Back-transformed coefficients to original variable space
-6. Evaluated model performance and compared with baseline
-
-## Trade-offs
-**Advantages:**
-- Reduced overfitting risk
-- Eliminates multicollinearity
-- Better generalization potential
-
-**Disadvantages:**
-- Lower predictive accuracy vs full model
-- Reduced interpretability
-- Information loss from discarded components
+## Files in This Repository
+- Crime-Rate-Prediction-PCA.R – Main R script implementing PCA model
+- uscrime.txt – Dataset with headers
+- README.md – Project overview
+- writeup.pdf - Project documentation
 
 ## Tools Used
 - **Language**: R
